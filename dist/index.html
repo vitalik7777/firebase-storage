@@ -5,22 +5,79 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My storage</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<div class="categories"></div>
-<div class="main-content"></div>
-<form class="add-post">
-    <label>Content</label>
-    <textarea name="content"></textarea>
-    <button>Add</button>
-</form>
+<div data-fire-store-plugin="true">
+    <div class="categories"></div>
+    <div class="main-content"></div>
+    <form class="add-post">
+        <label>Content</label>
+        <textarea name="content"></textarea>
+        <button>Add</button>
+    </form>
 
-<br/>
-<form class="remove-post">
-    <label>Post id:</label>
-    <input type="text" name="id">
-    <button>Delete Post</button>
-</form>
-<script src="bundle.js"></script>
+    <br/>
+    <form class="remove-post">
+        <label>Post id:</label>
+        <input type="text" name="id">
+        <button>Delete Post</button>
+    </form>
+</div>
+<div data-hang-man-plugin="true" class="hangman">
+    <div class="container">
+        <div class="hangman-box">
+            <img src="./hang-man/images/hangman-0.svg" alt=""/>
+            <h1>HangMan Game</h1>
+        </div>
+        <div class="game-box">
+            <ul class="word-display">
+                <li class="letter"></li>
+                <li class="letter"></li>
+                <li class="letter guessed">a</li>
+                <li class="letter"></li>
+                <li class="letter"></li>
+                <li class="letter"></li>
+            </ul>
+            <h4 class="hint-text">
+                Hint:
+                <b>Lorem ipsum</b>
+            </h4>
+            <h4 class="guesses-text">
+                Incorrect guesses:
+                <b>0 / 6</b>
+            </h4>
+            <div class="keyboard">
+                <button>a</button>
+                <button>b</button>
+                <button>b</button>
+                <button>b</button>
+                <button>b</button>
+                <button>b</button>
+                <button>b</button>
+                <button>b</button>
+                <button>b</button>
+                <button>b</button>
+                <button>b</button>
+                <button>b</button>
+                <button>b</button>
+                <button>b</button>
+                <button>b</button>
+                <button>b</button>
+                <button>b</button>
+                <button>b</button>
+                <button>b</button>
+                <button>b</button>
+                <button>b</button>
+                <button>b</button>
+                <button>b</button>
+                <button>b</button>
+                <button>b</button>
+                <button>b</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./custom-vanilla.js"></script>
 </body>
 </html>
